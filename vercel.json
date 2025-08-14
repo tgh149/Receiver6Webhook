@@ -1,0 +1,25 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "main.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "main.py"
+    }
+  ],
+  "crons": [
+    {
+      "path": "/cron/account-check",
+      "schedule": "*/15 * * * *"
+    },
+    {
+      "path": "/cron/daily-cleanup",
+      "schedule": "5 0 * * *"
+    }
+  ]
+}
