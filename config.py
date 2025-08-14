@@ -9,7 +9,7 @@ INITIAL_ADMIN_ID = 6158106622
 # --- NEW: SECRET FOR CRON JOBS ---
 # Generate a random, long string for this value.
 # It ensures only Vercel/Koyeb can trigger your scheduled tasks.
-CRON_SECRET = "your_super_secret_random_string_here_12345" # <-- IMPORTANT: REPLACE THIS
+CRON_SECRET = "k8RzX4vPjB7gT2wFqE9sN1mC3uY5aL0h" # <-- IMPORTANT: REPLACE THIS
 
 # Filename for the persistent scheduler database (no longer used by the bot directly)
 SCHEDULER_DB_FILE = "scheduler.sqlite"
